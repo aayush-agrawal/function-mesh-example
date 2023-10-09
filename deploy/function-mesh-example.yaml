@@ -2,7 +2,7 @@ apiVersion: compute.functionmesh.io/v1alpha1
 kind: Function
 metadata:
   name: function-mesh-example
-  namespace: function-mesh-1
+  namespace: function-mesh
 spec:
   image: function-mesh-example:latest # using function image here
   className: org.example.ExclamationFunction
