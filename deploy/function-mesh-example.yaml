@@ -22,7 +22,7 @@ spec:
     pulsarConfig: "mesh-test-pulsar"
   java:
     extraDependenciesDir: random-dir/
-    jar: /pulsar/example-function.jar # the package location in image
+    jar: /pulsar/pulsar-function-1.0-SNAPSHOT.jar # the package location in image
     jarLocation: "" # leave empty since we will not download package from Pulsar Packages
   resources:
     requests:
