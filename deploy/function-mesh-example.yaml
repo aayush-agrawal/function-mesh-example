@@ -4,13 +4,9 @@ metadata:
   name: function-mesh-example
   namespace: function-mesh
 spec:
-  image: function-mesh-example:latest # using function image here
   className: org.example.ExclamationFunction
-  forwardSourceMessageProperty: true
-  maxPendingAsyncRequests: 1000
   replicas: 1
-  maxReplicas: 1
-  logTopic: persistent://public/default/log-topic
+  maxReplicas: 3
   input:
     topics:
     - persistent://public/default/input-topic
