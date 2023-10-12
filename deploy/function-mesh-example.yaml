@@ -20,6 +20,13 @@ spec:
     typeClassName: java.lang.String
   pulsar:
     pulsarConfig: "mesh-test-pulsar"
+  resources:
+    limits:
+      cpu: "0.2"
+      memory: 0.3G
+    requests:
+      cpu: "0.1"
+      memory: 0.3G
   java:
     extraDependenciesDir: random-dir/
     jar: /pulsar/pulsar-function-1.0-SNAPSHOT.jar # the package location in image
