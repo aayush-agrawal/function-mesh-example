@@ -24,13 +24,6 @@ spec:
     extraDependenciesDir: random-dir/
     jar: /pulsar/pulsar-function-1.0-SNAPSHOT.jar # the package location in image
     jarLocation: "" # leave empty since we will not download package from Pulsar Packages
-  resources:
-    requests:
-      cpu: "0.1"
-      memory: 1G
-    limits:
-      cpu: "0.2"
-      memory: 1.1G
 ---
 apiVersion: v1
 kind: ConfigMap
